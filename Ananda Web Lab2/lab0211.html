@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2-Question 11</title>
+    <style>
+        body{
+            margin-left: 40px;
+        }
+        table, th, td {
+          border:1px solid black;
+          margin-top: 10px;
+        }
+        .input{
+            margin: 4px;
+            width: 240px;
+        }
+        .buttons{
+            margin-top: 15px;
+        }
+        table.data input{
+            width:40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to New Horizon Shopping Store</h2>
+    <p>
+        Buyer's Name: <input type="text" class="input" style="margin-left: 5px;"> <br>
+        Street Address: <input type="text" class="input" style="margin-left: 3px;"> <br>
+        City, State, Zip: <input type="text" class="input" style="margin-left: 0;">
+    </p>
+    <table class="data">
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <th>Popcorn(1 Kg.)</th>
+            <td>Rs 30.00</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <th>Caramel Popcorn (2 Kg. Pack)</th>
+            <td>Rs 350.00</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <th>Caramel Nut Popcorn (2 Kg. Pack)</th>
+            <td>Rs 375.00</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <th>Toffey Nut Popcorn (1.5 Kg. Pack)</th>
+            <td>Rs 575.00</td>
+            <td><input type="number"></td>
+        </tr>
+    </table>
+    <h3>Payment Method:</h3>
+    <label>
+      <input type="radio" name="Payment">Visa
+    </label>
+    <label>
+        <input type="radio" name="Payment">Master Card
+    </label>
+   <label>
+        <input type="radio" name="Payment">Discover
+    </label>
+    <label>
+        <input type="radio" name="Payment">Check
+    </label>
+    <div class="buttons">
+        <button>Submit Order</button>
+        <button>Clear Order Form</button>
+    </div>
+</body>
+</html>
