@@ -1,0 +1,54 @@
+
+.text{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color:black;
+   
+}
+#timer{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+ 
+   
+}
+#minutes{
+    height: 1.5rem;
+    border-radius: 5px;
+    
+}
+
+.reset-btn{
+   background-color: orange;
+   padding-left:1rem;
+   padding-right: 1rem;
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+   border: none;
+   border-radius: 5px;
+   margin: 0;
+   color: #fff;  
+}
+.reset-btn:hover{
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+.start-btn{
+   background-color: rgba(13, 163, 80, 0.797);
+   padding-left:1rem;
+   padding-right: 1rem;
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+   border: none;
+   border-radius: 5px;
+   margin: .5rem;
+   color: #fff;
+}
+.start-btn:hover{
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}

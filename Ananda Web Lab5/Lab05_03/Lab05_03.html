@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab05_03</title>
+    <link rel='stylesheet' href='Lab05_03.css' type='text/css' />
+
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+    Use tab keys to move from one input field to the next.
+    <form align="center" name='registration' onSubmit="return formValidation();" id="main">
+        <table align="center">
+            <tr>
+                <td id="topic"><label for="userid">User id:</label></td>
+                <td id="response"><input type="text" name="userid" size="12" /></td>
+            </tr>
+            <tr>
+                <td id="topic"><label for="passid">Password:</label></td>
+                <td id="response"><input type="password" name="passid" size="12" /></td>
+            </tr>
+            <tr>
+                <td id="topic"><label for="username">FirstName:</label></td>
+                <td id="response"><input type="text" name="username" size="50" /></td>
+            </tr>
+            <tr>
+                <td id="topic"><label for="address">Address:</label></td>
+                <td id="response"><input type="text" name="address" size="50" /></td>
+            </tr>
+            <tr>
+                <td id="topic"><label for="Country">Country:
+                </label></td>
+                <td id="response">
+
+                    <select name="country">
+
+                        <option selected="" value="Default">(Please select a country)</option>
+                        <option value="Aus">Australia</option>
+                        <option value="Can">Canada</option>
+                        <option value="Ind">India</option>
+                        <option value="Nep">Nepal</option>
+                        <option value="Rus">Russia</option>
+                        <option value="Usa">USA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td id="topic"><label for="zip">ZIP Code:</label></td>
+                <td id="response"><input type="text" name="zip" /><br></td>
+            </tr>
+            <tr>
+                <td id="topic"> <label for="email">Email:</label> </td>
+                <td id="response"> <input type="text" name="email" size="50" /> </td>
+            </tr>
+            <tr>
+                <td id="topic">
+
+                    <label id="gender">Sex:</label>
+                </td>
+                <td id="response">
+
+                    <input type="radio" name="msex" value="Male" />Male
+                    <input type="radio" name="fsex" value="Female" />Female
+                </td>
+            </tr>
+            <tr>
+                <td id="topic">
+                    <label>Language:</label>
+
+                </td>
+                <td id="response">
+                    <input type="checkbox" name="en" value="en" />English
+                    <input type="checkbox" name="nonen" value="noen" />Non English<br />
+                </td>
+            </tr>
+            <tr>
+                <td id="topic">
+                    <label for="desc">About:</label>
+
+                </td>
+                <td id="response">
+                    <textarea name="desc" id="desc" cols="40" rows="8"></textarea><br />
+                    <input type="submit" name="submit" value="Submit" />
+                    <input type="reset" value="Reset" onclick="clearFunc()" id="res" class="btn" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="Lab05_03.js"></script>
+</body>
+
+</html>
