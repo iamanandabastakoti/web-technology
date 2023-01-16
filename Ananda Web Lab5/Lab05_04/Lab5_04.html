@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link rel='stylesheet' href='Lab5_04.css' type='text/css' />
+    <title>Lab5_04</title>
+</head>
+
+<body>
+    <div >
+        <h4>Maggi Hot & Sweet Tomato Chilly Sauce 200G</h4>
+       <table>
+        <td><img src="sauce-image.jpg" / height="150rem"></td>
+    </div>
+
+   <td><div id="left">
+        <div>
+            <b>
+                Price&emsp;&emsp;&emsp;&emsp;Rs. 135
+            </b>
+            <div>
+                <b> Quantity</b>
+                <button id="sign" onclick="decrease()">-</button>
+                <span id="quantity-number">0</span>
+                <button id= "sign" onclick="increase()">+</button>
+            </div>
+        </div>
+        <div id="dis">
+            <label for="discount">Discount</label><br>
+            <input type="text" id="discount" oninput="Price()">
+        </div>
+        <br>
+        <table id="total" border="1px" width="180">
+           <tr><td colspan="1">Total</td> </tr>
+            <td align="right"><div id="price"  >Rs. 0 </div></td>
+        </table>
+        
+    </div>
+</td> 
+</table>
+    <script src="Lab5_04.js"></script>
+</body>
+
+</html>
